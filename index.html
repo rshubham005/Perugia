@@ -344,6 +344,18 @@ img.hm-ph{display:block;width:100%;height:auto;object-fit:cover;padding:0}
 .soon-panel p{margin-top:16px;color:#C9D3E2}
 @media (max-width:520px){.gallery{grid-template-columns:1fr}.tile.big{grid-column:span 1;grid-row:span 1}.tile.tall{grid-row:span 1}}
 
+/* ---------- investors ---------- */
+.inv-hero{display:grid;grid-template-columns:7fr 5fr;gap:clamp(32px,6vw,80px);align-items:center}
+.inv-emblem{margin:0;border:1px solid var(--gline);background:#011232;aspect-ratio:1;overflow:hidden;box-shadow:0 18px 36px -12px rgba(0,0,0,.45)}
+.inv-emblem img{width:100%;height:100%;object-fit:cover}
+.inv-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+.inv-card{background:#fff;padding:clamp(26px,3vw,40px);display:flex;flex-direction:column;gap:14px;transition:background .2s}
+.inv-card:hover{background:#FBF8F0}
+.inv-card .svc-num{font-size:clamp(48px,5vw,64px)}
+.inv-card p{color:var(--muted)}
+@media (max-width:860px){.inv-hero{grid-template-columns:1fr}.inv-emblem{max-width:460px}}
+@media (max-width:620px){.inv-grid{grid-template-columns:1fr}}
+
 .cats{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,5vw,64px)}
 .cats h3{margin-bottom:16px;display:flex;align-items:center;gap:14px}
 .cats h3 .ico{width:30px;height:30px;color:var(--gold-ink);stroke-width:1.3}
@@ -519,7 +531,7 @@ form{display:grid;gap:20px;margin-top:28px}
     <nav class="nav" id="nav" aria-label="Main">
       <a href="#home" data-nav="home">Home</a>
       <a href="#services" data-nav="services">Services</a>
-      <a href="#projects" data-nav="projects">Projects</a>
+      <a href="#investors" data-nav="investors">Investors</a>
       <a href="#about" data-nav="about">About Us</a>
       <a href="#contact" data-nav="contact" class="nav-cta">Free Estimate</a>
     </nav>
@@ -673,7 +685,7 @@ form{display:grid;gap:20px;margin-top:28px}
   </section>
 
   <section class="sec stone svc" id="svc-res">
-    <div class="wrap"><figure class="svc-photo"><img src="images/service-residential.webp" alt="Modern single-family home with a pool" width="1600" height="685" loading="lazy"></figure></div>
+    <div class="wrap"><figure class="svc-photo"><img src="images/svc-residential.webp" alt="Residential construction: kitchen, new home build and bathroom remodel" width="1680" height="720" loading="lazy"></figure></div>
     <div class="wrap svc-grid">
       <div class="svc-head">
         <span class="svc-num" aria-hidden="true">01</span>
@@ -691,7 +703,7 @@ form{display:grid;gap:20px;margin-top:28px}
   </section>
 
   <section class="sec paper svc" id="svc-com">
-    <div class="wrap"><figure class="svc-photo"><img src="images/service-commercial.webp" alt="Modern office interior" width="1600" height="685" loading="lazy"></figure></div>
+    <div class="wrap"><figure class="svc-photo"><img src="images/svc-commercial.webp" alt="Commercial build-outs: restaurant, retail store and interior construction" width="1680" height="720" loading="lazy"></figure></div>
     <div class="wrap svc-grid flip">
       <div class="svc-head">
         <span class="svc-num" aria-hidden="true">02</span>
@@ -709,7 +721,7 @@ form{display:grid;gap:20px;margin-top:28px}
   </section>
 
   <section class="sec on-dark svc" id="svc-design">
-    <div class="wrap"><figure class="svc-photo"><img src="images/service-design.webp" alt="Modern kitchen with marble backsplash" width="1600" height="685" loading="lazy"></figure></div>
+    <div class="wrap"><figure class="svc-photo"><img src="images/svc-design.webp" alt="Greek marble and stone products with direct manufacturing" width="1680" height="720" loading="lazy"></figure></div>
     <div class="wrap">
       <div class="svc-grid">
         <div class="svc-head">
@@ -733,7 +745,7 @@ form{display:grid;gap:20px;margin-top:28px}
   </section>
 
   <section class="sec stone svc" id="svc-tech">
-    <div class="wrap"><figure class="svc-photo"><img src="images/service-technology.webp" alt="Card payment terminal printing a receipt" width="1600" height="685" loading="lazy"></figure></div>
+    <div class="wrap"><figure class="svc-photo"><img src="images/svc-technology.webp" alt="Business technology: internet, phone systems and security" width="1680" height="720" loading="lazy"></figure></div>
     <div class="wrap">
       <div class="svc-grid">
         <div class="svc-head">
@@ -777,81 +789,67 @@ form{display:grid;gap:20px;margin-top:28px}
   </section>
 </div>
 
-<!-- =============================== PROJECTS =============================== -->
-<div class="page" id="page-projects">
+<!-- =============================== INVESTORS =============================== -->
+<div class="page" id="page-investors">
   <section class="banner blueprint">
-    <div class="wrap">
-      <span class="eyebrow">Project Gallery</span>
-      <h1 class="goldtext">Our Projects. Our Workmanship. Our Results.</h1>
-      <p class="lead">Explore a selection of our residential and commercial projects, showcasing our workmanship, attention to detail and commitment to quality.</p>
+    <div class="wrap inv-hero">
+      <div>
+        <span class="eyebrow">Investors</span>
+        <h1 class="goldtext">Investing in Florida Real Estate</h1>
+        <p class="lead">Perugia Enterprises, Inc. welcomes potential investors interested in Florida spec home construction, residential property flipping, renovations and real estate development.</p>
+      </div>
+      <figure class="inv-emblem"><img src="images/investors-emblem.webp" alt="Gold emblem of a Florida home with palm trees and a rising growth chart" width="1000" height="1000"></figure>
     </div>
   </section>
 
   <section class="sec stone">
     <div class="wrap">
-      <div class="soon-panel blueprint">
-        <svg class="ico"><use href="#i-image"/></svg>
-        <div><span class="eyebrow">Project Gallery</span></div>
-        <h2 class="goldtext">Coming Soon</h2>
-        <p>Project photos are being added.</p>
+      <div class="head">
+        <span class="eyebrow">Investment focus</span>
+        <h2>Opportunities We Pursue</h2>
+        <p class="lead muted">Our investment activity is focused on residential and development projects in Florida.</p>
+      </div>
+      <div class="inv-grid">
+        <article class="inv-card">
+          <span class="svc-num" aria-hidden="true">01</span>
+          <h3>Florida Spec Home Construction</h3>
+          <p>New single-family homes built for the Florida market, from site and plan selection through construction and completion.</p>
+        </article>
+        <article class="inv-card">
+          <span class="svc-num" aria-hidden="true">02</span>
+          <h3>Residential Property Flipping</h3>
+          <p>Acquiring residential properties with improvement potential, upgrading them and bringing them back to market.</p>
+        </article>
+        <article class="inv-card">
+          <span class="svc-num" aria-hidden="true">03</span>
+          <h3>Renovations</h3>
+          <p>Kitchen and bathroom remodels, whole-home renovations and interior and exterior improvements that add value to a property.</p>
+        </article>
+        <article class="inv-card">
+          <span class="svc-num" aria-hidden="true">04</span>
+          <h3>Real Estate Development</h3>
+          <p>Residential development projects planned and coordinated with our network of contractors, engineers and real estate partners.</p>
+        </article>
       </div>
     </div>
   </section>
 
-  <section class="sec paper">
-    <div class="wrap cats">
-      <div>
-        <h3><svg class="ico"><use href="#i-house"/></svg>Residential Projects</h3>
-        <ul class="dlist">
-          <li>Kitchen and bathroom remodels</li>
-          <li>Whole-home renovations</li>
-          <li>Interior and exterior improvements</li>
-          <li>Single-family home construction</li>
-        </ul>
-      </div>
-      <div>
-        <h3><svg class="ico"><use href="#i-building"/></svg>Commercial Projects</h3>
-        <ul class="dlist">
-          <li>Restaurant build-outs</li>
-          <li>Gyms and fitness facilities</li>
-          <li>Office spaces</li>
-          <li>Retail and commercial renovations</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <section class="sec on-dark design-band">
+  <section class="sec on-dark">
     <div class="wrap split" style="align-items:start">
       <div>
-        <span class="eyebrow">Design &amp; Interiors</span>
-        <h2>Thoughtfully designed kitchens and bathrooms</h2>
-        <p class="lead" style="margin-top:20px">We create thoughtfully designed kitchens and bathrooms that combine style, functionality and quality craftsmanship.</p>
+        <span class="eyebrow">Why Perugia</span>
+        <h2>Experience. Relationships. Value.</h2>
+        <p class="lead" style="margin-top:20px">Every project draws on the same construction experience, design resources and professional relationships that support our residential and commercial clients.</p>
       </div>
       <div>
         <ul class="dlist">
-          <li>Custom kitchen designs and layouts</li>
-          <li>Bathroom design and renovations</li>
-          <li>Cabinetry, countertops and backsplashes</li>
-          <li>Tile, flooring and wall finishes</li>
-          <li>Fixtures, lighting and material selections</li>
-          <li>Custom interior finishes and details</li>
+          <li>Established relationships with General Contractors and licensed trade professionals</li>
+          <li>Florida-licensed engineers for planning, design coordination and permitting</li>
+          <li>Direct manufacturer sourcing through Kondylis NYC Design House to help control material costs</li>
+          <li>Real estate and title partners: Saggio Realty and Iconic Title</li>
+          <li>Project management and coordination from start to finish</li>
         </ul>
-        <p class="seal left"><span>Beautiful design. Functional spaces. Exceptional value.</span></p>
-      </div>
-    </div>
-  </section>
-
-  <section class="cta blueprint">
-    <div class="wrap cta-grid">
-      <div>
-        <span class="eyebrow">Your project next</span>
-        <h2>Let's Discuss Your Next Project</h2>
-        <p>Whether you're planning a home renovation, building a new home, developing a commercial space or looking to improve your business technology, we'd like to hear from you.</p>
-      </div>
-      <div>
-        <p class="free-line">Free Project Evaluation <i></i> Free Estimate</p>
-        <div class="btns"><a class="btn btn-gold" href="#contact">Contact Us <svg class="ico"><use href="#i-arrow"/></svg></a></div>
+        <p class="seal left"><span>Building Developments. Connecting Communities.</span></p>
       </div>
     </div>
   </section>
@@ -876,7 +874,6 @@ form{display:grid;gap:20px;margin-top:28px}
         <p style="margin-top:16px;max-width:60ch">Our goal is to deliver quality workmanship, cost-effective solutions and exceptional value through trusted relationships and industry expertise.</p>
       </div>
       <div class="about-side">
-      <figure class="about-photo"><img src="images/about-partners.webp" alt="Two business partners shaking hands" width="1100" height="825" loading="lazy"></figure>
       <aside class="bring" aria-label="What we bring together">
         <span class="k">What we bring together</span>
         <ul>
@@ -1060,7 +1057,7 @@ form{display:grid;gap:20px;margin-top:28px}
         <ul>
           <li><a href="#home">Home</a></li>
           <li><a href="#services">Our Services</a></li>
-          <li><a href="#projects">Project Gallery</a></li>
+          <li><a href="#investors">Investors</a></li>
           <li><a href="#about">About Us</a></li>
           <li><a href="#contact">Contact Us</a></li>
         </ul>
@@ -1122,10 +1119,11 @@ form{display:grid;gap:20px;margin-top:28px}
   var hmHero = document.getElementById('hm-hero');
 
   /* ---------- routing ---------- */
-  var PAGES = ['home','services','projects','about'];
+  var PAGES = ['home','services','investors','about'];
   var nav = document.getElementById('nav'), burger = document.getElementById('burger');
   function route(){
     var h = (location.hash || '#home').slice(1);
+    if (h === 'projects') h = 'investors';
     var page = PAGES.indexOf(h) > -1 ? h : (h === 'contact' ? 'about' : 'home');
     document.querySelectorAll('.page').forEach(function(p){ p.classList.toggle('on', p.id === 'page-' + page); });
     var navKey = h === 'contact' ? 'contact' : page;
